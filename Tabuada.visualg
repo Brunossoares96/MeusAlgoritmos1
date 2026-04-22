@@ -1,0 +1,20 @@
+algoritmo "Tabuada"
+
+var
+  numero, loop, resultado: inteiro
+
+inicio
+  escreval("Escolha um número de 1 a 10: ")
+  leia(numero)
+
+  se (numero >= 1) e (numero <= 10) entao
+    escreval("Tabuada do ", numero)
+
+    para loop de 1 ate 10 faca
+      resultado <- numero * loop
+      escreval(numero, " x ", loop, " = ", resultado)
+    fimpara
+  senao
+    escreval("Erro: O número digitado deve estar entre 1 e 10.")
+  fimse
+fimalgoritmo

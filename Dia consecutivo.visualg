@@ -1,0 +1,28 @@
+algoritmo "Dia Consecutivo"
+
+var
+  dia, proximo: caractere
+
+inicio
+  escreval("Escolha um dia da semana e escreva por extenso: ")
+  leia(dia)
+  escolha dia
+    caso "Domingo"
+      proximo <- "Segunda-feira"
+    caso "Segunda-feira"
+      proximo <- "Terça-feira"
+    caso "Terça-feira"
+      proximo <- "Quarta-feira"
+    caso "Quarta-feira"
+      proximo <- "Quinta-feira"
+    caso "Quinta-feira"
+      proximo <- "Sexta-feira"
+    caso "Sexta-feira"
+      proximo <- "Sábado"
+    caso "Sábado"
+      proximo <- "Domingo"
+    outrocaso
+      proximo <- "Dia inválido ou erro de digitação!"
+  fimescolha
+  escreval("O dia consecutivo é: ", proximo)
+fimalgoritmo
